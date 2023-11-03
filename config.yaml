@@ -1,23 +1,23 @@
 use_eeg: False
 
-Training1_trials_col_col: 10
-Training1_trials_col1_col2: 10
-Training1_trials_neu_neu: 10
-Training1_trials_neu1_neu2: 10
+Training1_trials_col_col: 0
+Training1_trials_col1_col2: 0
+Training1_trials_neu_neu: 6
+Training1_trials_neu1_neu2: 0
 
-Training2_trials_col_col: 10
-Training2_trials_col1_col2: 10
-Training2_trials_neu_neu: 10
-Training2_trials_neu1_neu2: 10
+Training2_trials_col_col: 6
+Training2_trials_col1_col2: 6
+Training2_trials_neu_neu: 6
+Training2_trials_neu1_neu2: 6
 
 Training_Resp_time: 4
 Training_Wait_time: 1
 
 Number_of_blocks: 1
-Experiment_trials_col_col: 10
-Experiment_trials_col1_col2: 10
-Experiment_trials_neu_neu: 10
-Experiment_trials_neu1_neu2: 10
+Experiment_trials_col_col: 120
+Experiment_trials_col1_col2: 120
+Experiment_trials_neu_neu: 120
+Experiment_trials_neu1_neu2: 120
 
 Experiment_Resp_time: 3
 Experiment_Wait_time: 1
