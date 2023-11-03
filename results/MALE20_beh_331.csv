@@ -1,0 +1,3 @@
+EXP,TRIAL_TYPE,TEXT,COLOR,WAIT,RESPTIME,RT,TRUE_KEY,ANSWER,CORR
+training,col_col,"['Z£OCISTY', 'Z£OCISTY']",green,1,4,-1,n,-,False
+training,col1_col2,"['BORDOWY', 'RÓ¯OWY']",red,1,4,-1,z,-,False

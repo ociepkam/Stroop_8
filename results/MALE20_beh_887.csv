@@ -1,0 +1,2 @@
+EXP,TRIAL_TYPE,TEXT,COLOR,WAIT,RESPTIME,RT,TRUE_KEY,ANSWER,CORR
+training,col_col,"['Z£OCISTY', 'Z£OCISTY']",green,1,4,-1,z,-,False

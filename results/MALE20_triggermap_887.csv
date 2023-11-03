@@ -1,0 +1,9 @@
+trigger_no,trigger_type,acc,stimulus
+1,stimulus,UNKNOWN,UNKNOWN
+# 0:00:00.000010  | info     | TriggerHandler constructed with params: dummy_mode=True,trigger_time=0.003
+# 0:00:00.000020  | info     | Possible triggerTypes registered: ['stimulus', 'answer']
+# 0:00:00.000022  | info     | Dummy mode: True
+# 0:00:00.000026  | info     | Trigger time: 0.003
+# 0:00:00.000029  | info     | Params registered: ['trigger_no', 'trigger_type', 'acc', 'stimulus']
+# 0:00:00.000032  | info     | Trigger limit set to: 60
+# 0:00:09.137636  | info     | send_trigger() run with params trigger_type=stimulus, info=None, with_delay=True

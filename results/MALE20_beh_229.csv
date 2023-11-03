@@ -1,0 +1,6 @@
+EXP,TRIAL_TYPE,TEXT,COLOR,WAIT,RESPTIME,RT,TRUE_KEY,ANSWER,CORR
+training,neutral_2,"['UKRYTA', 'WYSOKA']",red,1,4,2.2640368938446045,m,m,True
+training,neutral,"['DALEKA', 'DALEKA']",green,1,4,0.3682389259338379,x,m,False
+training,neutral,"['GŁĘBOKA', 'GŁĘBOKA']",red,1,4,0.0208132266998291,m,m,True
+training,neutral,"['WYSOKA', 'WYSOKA']",green,1,4,4.506111145019531e-05,x,m,False
+training,neutral,"['GŁĘBOKA', 'GŁĘBOKA']",#574400,1,4,0.15530800819396973,n,m,False

@@ -1,0 +1,2 @@
+EXP,TRIAL_TYPE,TEXT,COLOR,WAIT,RESPTIME,RT,TRUE_KEY,ANSWER,CORR
+training,neu_neu,"['UKRYTA', 'UKRYTA']",red,1,4,-1,z,-,False

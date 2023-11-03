@@ -1,0 +1,32 @@
+trigger_no,trigger_type,acc,stimulus
+1,stimulus,False,neutral_2
+2,stimulus,False,neutral
+3,answer,False,neutral
+4,stimulus,False,neutral_2
+5,answer,False,neutral_2
+6,stimulus,UNKNOWN,UNKNOWN
+# 0:00:00.000011  | info     | TriggerHandler constructed with params: dummy_mode=True,trigger_time=0.003
+# 0:00:00.000021  | info     | Possible triggerTypes registered: ['stimulus', 'answer']
+# 0:00:00.000024  | info     | Dummy mode: True
+# 0:00:00.000027  | info     | Trigger time: 0.003
+# 0:00:00.000030  | info     | Params registered: ['trigger_no', 'trigger_type', 'acc', 'stimulus']
+# 0:00:00.000034  | info     | Trigger limit set to: 60
+# 0:00:00.002444  | info     | Connected to EEG (in connect_to_eeg())
+# 0:00:07.460257  | info     | Value: 1 sent to EEG.
+# 0:00:07.460279  | info     | send_trigger() run with params trigger_type=stimulus, info=None, with_delay=True
+# 0:00:07.463485  | info     | Clear message sent to EEG.
+# 0:00:12.633848  | info     | Value: 2 sent to EEG.
+# 0:00:12.633865  | info     | send_trigger() run with params trigger_type=stimulus, info=None, with_delay=True
+# 0:00:12.637030  | info     | Clear message sent to EEG.
+# 0:00:13.488370  | info     | Value: 3 sent to EEG.
+# 0:00:13.488395  | info     | send_trigger() run with params trigger_type=answer, info=None, with_delay=True
+# 0:00:13.491560  | info     | Clear message sent to EEG.
+# 0:00:16.064346  | info     | Value: 4 sent to EEG.
+# 0:00:16.064374  | info     | send_trigger() run with params trigger_type=stimulus, info=None, with_delay=True
+# 0:00:16.067566  | info     | Clear message sent to EEG.
+# 0:00:17.154595  | info     | Value: 5 sent to EEG.
+# 0:00:17.154616  | info     | send_trigger() run with params trigger_type=answer, info=None, with_delay=True
+# 0:00:17.157945  | info     | Clear message sent to EEG.
+# 0:00:19.286445  | info     | Value: 6 sent to EEG.
+# 0:00:19.286462  | info     | send_trigger() run with params trigger_type=stimulus, info=None, with_delay=True
+# 0:00:19.289746  | info     | Clear message sent to EEG.
