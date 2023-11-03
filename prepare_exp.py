@@ -87,8 +87,6 @@ def prepare_trial(trial_type, win, text_height, words_dist):
     last_text = text if len(text) == 2 else [text]
     last_text_2 = stim_distr
 
-    print({'trial_type': trial_type, 'text': words, 'color': color})
-
     stim1 = visual.TextStim(win, color=color, text=words[0], height=text_height, pos=(0, words_dist/2))
     stim2 = visual.TextStim(win, color=color, text=words[1], height=text_height, pos=(0, -words_dist/2))
     return {'trial_type': trial_type, 'text': words, 'color': color, 'stim': [stim1, stim2]}
