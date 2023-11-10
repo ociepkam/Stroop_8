@@ -2,13 +2,15 @@ use_eeg: False
 
 Training1_trials_col_col: 0
 Training1_trials_col1_col2: 0
-Training1_trials_neu_neu: 6
+Training1_trials_neu_neu: 0
 Training1_trials_neu1_neu2: 0
+Training1_trials_neutral: 10
 
 Training2_trials_col_col: 6
 Training2_trials_col1_col2: 6
 Training2_trials_neu_neu: 6
 Training2_trials_neu1_neu2: 6
+Training2_trials_neutral: 0
 
 Training_Resp_time: 4
 Training_Wait_time: 1
@@ -18,6 +20,7 @@ Experiment_trials_col_col: 120
 Experiment_trials_col1_col2: 120
 Experiment_trials_neu_neu: 120
 Experiment_trials_neu1_neu2: 120
+Experiment_trials_neutral: 0
 
 Experiment_Resp_time: 3
 Experiment_Wait_time: 1

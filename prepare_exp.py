@@ -7,7 +7,7 @@ from psychopy import visual
 import copy
 
 stim_text = {'CZERWONY': 'red', 'NIEBIESKI': '#5e75d9', 'BRAZOWY': '#574400', 'ZIELONY': 'green'}  # text: color
-#stim_neutral = "HHHHHHHH"
+stim_neutral = "HHHHHHHH"
 stim_distractor_adjective = ['WYSOKA', 'UKRYTA', u'GŁĘBOKA', 'DALEKA']
 stim_distractor_color = ['RÓŻOWY', 'BORDOWY', 'ZŁOCISTY', 'KREMOWY']
 
@@ -79,6 +79,14 @@ def prepare_trial(trial_type, win, text_height, words_dist):
             possible_colors.remove(last_color)
         color = random.choice(possible_colors)
 
+    elif trial_type == 'neutral':
+        words = [stim_neutral, stim_neutral]
+        possible_colors = list(stim_text.values())
+        if last_color is not None:
+            possible_colors.remove(last_color)
+        color = random.choice(possible_colors)
+        text = []
+
     else:
         raise Exception('Wrong trigger type')
 
@@ -92,11 +100,12 @@ def prepare_trial(trial_type, win, text_height, words_dist):
     return {'trial_type': trial_type, 'text': words, 'color': color, 'stim': [stim1, stim2]}
 
 
-def prepare_part(trials_col_col, trials_col1_col2, trials_neu_neu, trials_neu1_neu2, win, text_height, words_dist):
+def prepare_part(trials_col_col, trials_col1_col2, trials_neu_neu, trials_neu1_neu2, trials_neutral, win, text_height, words_dist):
     trials = ['col_col'] * trials_col_col + \
              ['col1_col2'] * trials_col1_col2 + \
              ['neu_neu'] * trials_neu_neu + \
-             ['neu1_neu2'] * trials_neu1_neu2
+             ['neu1_neu2'] * trials_neu1_neu2 + \
+             ['neutral'] * trials_neutral
     random.shuffle(trials)
     return [prepare_trial(trial_type, win, text_height, words_dist) for trial_type in trials]
 
@@ -106,16 +115,19 @@ def prepare_exp(data, win, text_size, words_dist):
     training1_trials = prepare_part(data['Training1_trials_col_col'],
                                     data['Training1_trials_col1_col2'],
                                     data['Training1_trials_neu_neu'],
-                                    data['Training1_trials_neu1_neu2'], win, text_height, words_dist)
+                                    data['Training1_trials_neu1_neu2'],
+                                    data['Training1_trials_neutral'], win, text_height, words_dist)
 
     training2_trials = prepare_part(data['Training2_trials_col_col'],
                                     data['Training2_trials_col1_col2'],
                                     data['Training2_trials_neu_neu'],
-                                    data['Training2_trials_neu1_neu2'],  win, text_height, words_dist)
+                                    data['Training2_trials_neu1_neu2'],
+                                    data['Training2_trials_neutral'], win, text_height, words_dist)
 
     experiment_trials = prepare_part(data['Experiment_trials_col_col'],
                                     data['Experiment_trials_col1_col2'],
                                     data['Experiment_trials_neu_neu'],
-                                    data['Experiment_trials_neu1_neu2'],  win, text_height, words_dist)
+                                    data['Experiment_trials_neu1_neu2'],
+                                    data['Experiment_trials_neutral'], win, text_height, words_dist)
 
     return [training1_trials, training2_trials], experiment_trials, colors_text, colors_names
