@@ -14,7 +14,7 @@ from code.load_data import read_text_from_file, load_config
 
 from misc.screen_misc import get_screen_res, get_frame_rate
 from prepare_exp import prepare_exp
-
+from code.triggers import TriggerHandler
 
 # GLOBALS
 TEXT_SIZE = 20
@@ -102,8 +102,6 @@ def abort_with_error(err):
 # exp info
 data = load_config()
 if data['use_eeg']:
-    from code.triggers import TriggerHandler
-    TRIGGERS = TriggerHandler(TriggerTypes.vals(), trigger_params=['acc', 'stimulus'], trigger_time=0.003)
     TRIGGERS.connect_to_eeg()
 
 # part info
