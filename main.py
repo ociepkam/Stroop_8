@@ -35,6 +35,7 @@ class TriggerTypes(object):
     def vals(cls):
         return [value for name, value in vars(cls).items() if name.isupper()]
 
+TRIGGERS = TriggerHandler(TriggerTypes.vals(), trigger_params=['acc', 'stimulus'], trigger_time=0.003)
 
 @atexit.register
 def save_beh_results():
